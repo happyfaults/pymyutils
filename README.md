@@ -23,9 +23,8 @@ You can also use the equivalent Python setup commands:
 
 ### Image Utils
 
-From [myutils.client.image.App]()
+From [myutils.client.image.App](https://github.com/happyfaults/pymyutils/blob/master/src/myutils/client/image/__init__.py)
 ```python
-# load the files-based app interactor type
 from myutils.client.image import App
 a = App.Load()
 ```
@@ -46,7 +45,7 @@ img = a.resizeImagePNG(
 ```
 
 ## Configuration
-All configuration is done using a framework that sets items to a Python dict when the app is loaded. When `App.Load()` is invoked, it will call its [config manager type](https://github.com/happyfaults/pymutils/blob/master/src/myutils/lib/client/config.py) to populate the app's `config` member variable.
+All configuration is done using a framework that sets items to a Python dict when the app is loaded. When `App.Load()` is invoked, it will call its [config manager type](https://github.com/happyfaults/pymyutils/blob/master/src/myutils/lib/client/config.py) to populate the app's `config` member variable.
 ```python
 >>> from myutils.client.files import App
 >>> a = App.Load()
@@ -61,7 +60,7 @@ All configuration is done using a framework that sets items to a Python dict whe
 }
 ```
 #### Namespaces
-For convenience, you can access and update configuration items using a [namespace type](https://github.com/happyfaults/pymyutils/blob/master/src/myutils/lib/lang/nemspace.py) variable.
+For convenience, you can access and update configuration items using a [namespace type](https://github.com/happyfaults/pymyutils/blob/master/src/myutils/lib/lang/namespace.py) variable.
 ```python
 >>> NS = a.config['.NS']
 >>> NS
@@ -95,7 +94,7 @@ So the configuration module for the *interactor app* type: [myutils.client.image
 
 Is the corresponding matching *config* type: [myutils_c.client.image.App](https://github.com/happyfaults/pymyutils/blob/master/config/myutils_c/client/image/__init__.py)
 
-To update the default values, see file: [config/myutils_c/client/image/\_\_init\_\_.py](https://github.com/happyfaults/pymyutils/blob/master/config/myutils_c/client/files/__init__.py)
+To update the default values, see file: [config/myutils_c/client/image/\_\_init\_\_.py](https://github.com/happyfaults/pymyutils/blob/master/config/myutils_c/client/image/__init__.py)
 
 #### Ensure Config Modules Can Be Imported
 If you do not install the **myutils_c** package, the root config path must be included in your **PYTHONPATH** environment variable so that the configuration modules can be imported when `App.Load()` is called.
