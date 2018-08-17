@@ -1,5 +1,5 @@
 # PyMyUtils
-<img align="right" src="https://raw.githubusercontent.com/happyfaults/site-common/master/images/logo64.png"/>A Python library containing utilities and features to deal with various tasks we deal with daily for which the feature does not warrant a standalone project of its own.
+<img align="right" width=84 height=84 src="https://github.com/happyfaults/site-common/raw/master/images/logo128.png"/>A Python library containing utilities and features to deal with various tasks we deal with daily for which the feature does not warrant a standalone project of its own.
 
 
 ## Quick Install
